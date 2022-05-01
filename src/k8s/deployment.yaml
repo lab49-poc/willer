@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: willer
+  name: willer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: willer
+  template:
+    metadata:
+      labels:
+        app: willer
+    spec:
+      containers:
+      - image: --image--
+        name: willer
+        ports:
+          - containerPort: 8080

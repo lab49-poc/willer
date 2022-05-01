@@ -1,0 +1,8 @@
+site_name: "willer"
+site_description: "try using template for willer"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
